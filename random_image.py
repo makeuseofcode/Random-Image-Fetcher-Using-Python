@@ -31,7 +31,7 @@ elif 'four' in ans or '4' in ans:
      print("Please wait while we fetch the images from our database.")
      img_requests('/4096x2160')
 elif 'five' in ans or '5' in ans:
-     print("speak keywords seperated by commas ")
+     print("Please enter keywords seperated by commas. ")
      st=input()
      if 'comma' in st:
           st.replace('comma',',')
