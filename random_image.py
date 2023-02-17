@@ -19,16 +19,16 @@ print("""Please provide an option for Image
 ans=input()
 
 if 'one' in ans or '1' in ans:
-     print("Please wait while we fetch the images from our database.")
+     print("Please wait while we fetch an HD image.")
      img_requests('/1280x720')
 elif 'two' in ans or '2' in ans:
-     print("Please wait while we fetch the images from our database.")
+     print("Please wait while we fetch a Full HD image.")
      img_requests('/1920x1080')
 elif 'three' in ans or '3' in ans:
-     print("Please wait while we fetch the images from our database.")
+     print("Please wait while we fetch a 2k image.")
      img_requests('/2048x1080')
 elif 'four' in ans or '4' in ans:
-     print("Please wait while we fetch the images from our database.")
+     print("Please wait while we fetch a 4k image.")
      img_requests('/4096x2160')
 elif 'five' in ans or '5' in ans:
      print("Please enter keywords seperated by commas. ")
