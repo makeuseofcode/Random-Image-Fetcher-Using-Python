@@ -1,4 +1,4 @@
-import requests;
+import requests
 from PIL import Image
 
 def img_requests(txt):
@@ -14,29 +14,27 @@ print("""Please provide an option for Image
      2. FHD Random Picture
      3. 2K Random Picture
      4. 4k Random Picture
-     5. Picture with User Provided Keywords """)
+     5. Picture with User Provided Keyword """)
 
 ans=input()
 
 if 'one' in ans or '1' in ans:
-     print("Please wait while we fetch an HD image.")
+     print("Please wait while we fetch the images from our database.")
      img_requests('/1280x720')
 elif 'two' in ans or '2' in ans:
-     print("Please wait while we fetch a Full HD image.")
+     print("Please wait while we fetch the images from our database.")
      img_requests('/1920x1080')
 elif 'three' in ans or '3' in ans:
-     print("Please wait while we fetch a 2k image.")
+     print("Please wait while we fetch the images from our database.")
      img_requests('/2048x1080')
 elif 'four' in ans or '4' in ans:
-     print("Please wait while we fetch a 4k image.")
+     print("Please wait while we fetch the images from our database.")
      img_requests('/4096x2160')
 elif 'five' in ans or '5' in ans:
-     print("Please enter keywords seperated by commas. ")
+     print("Please enter the keyword you want to get a random image of.")
      st=input()
-     if 'comma' in st:
-          st.replace('comma',',')
      st="?"+st
      print("Please wait while we fetch the images from our database.")
      img_requests(st)
 else:
-     print("Please provide a valid Input")
+     print("Please provide a valid input.")
